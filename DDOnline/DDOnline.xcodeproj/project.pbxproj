@@ -167,6 +167,14 @@
 		BC0149F61C8B014A00AA4C45 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0149831C8B014A00AA4C45 /* UITextField+RACSignalSupport.m */; };
 		BC0149F71C8B014A00AA4C45 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0149851C8B014A00AA4C45 /* UITextView+RACSignalSupport.m */; };
 		BC0149F81C8B014A00AA4C45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BC0149861C8B014A00AA4C45 /* README.md */; };
+		BC0149FB1C8B020300AA4C45 /* XHDDOnlineMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0149FA1C8B020300AA4C45 /* XHDDOnlineMainController.m */; };
+		BC0149FE1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0149FD1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m */; };
+		BC014A011C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A001C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m */; };
+		BC014A071C8B056800AA4C45 /* XHDDOnlineSliderController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A061C8B056800AA4C45 /* XHDDOnlineSliderController.m */; };
+		BC014A0A1C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A091C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m */; };
+		BC014A0D1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A0C1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m */; };
+		BC014A101C8B05F900AA4C45 /* XHDDOnlineChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A0F1C8B05F900AA4C45 /* XHDDOnlineChatController.m */; };
+		BC014A131C8B060300AA4C45 /* XHDDOnlineMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC014A121C8B060300AA4C45 /* XHDDOnlineMineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -516,6 +524,22 @@
 		BC0149841C8B014A00AA4C45 /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BC0149851C8B014A00AA4C45 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BC0149861C8B014A00AA4C45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC0149F91C8B020300AA4C45 /* XHDDOnlineMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineMainController.h; sourceTree = "<group>"; };
+		BC0149FA1C8B020300AA4C45 /* XHDDOnlineMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineMainController.m; sourceTree = "<group>"; };
+		BC0149FC1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineRootNavigationController.h; sourceTree = "<group>"; };
+		BC0149FD1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineRootNavigationController.m; sourceTree = "<group>"; };
+		BC0149FF1C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineRootTabBarController.h; sourceTree = "<group>"; };
+		BC014A001C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineRootTabBarController.m; sourceTree = "<group>"; };
+		BC014A051C8B056800AA4C45 /* XHDDOnlineSliderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineSliderController.h; sourceTree = "<group>"; };
+		BC014A061C8B056800AA4C45 /* XHDDOnlineSliderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineSliderController.m; sourceTree = "<group>"; };
+		BC014A081C8B05D800AA4C45 /* XHDDOnlineFunPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayController.h; sourceTree = "<group>"; };
+		BC014A091C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayController.m; sourceTree = "<group>"; };
+		BC014A0B1C8B05EE00AA4C45 /* XHDDOnlineJokeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineJokeController.h; sourceTree = "<group>"; };
+		BC014A0C1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineJokeController.m; sourceTree = "<group>"; };
+		BC014A0E1C8B05F900AA4C45 /* XHDDOnlineChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineChatController.h; sourceTree = "<group>"; };
+		BC014A0F1C8B05F900AA4C45 /* XHDDOnlineChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineChatController.m; sourceTree = "<group>"; };
+		BC014A111C8B060300AA4C45 /* XHDDOnlineMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineMineController.h; sourceTree = "<group>"; };
+		BC014A121C8B060300AA4C45 /* XHDDOnlineMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineMineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -630,8 +654,8 @@
 				BC0148201C8AFEF500AA4C45 /* Slider(侧边栏) */,
 				BC0148021C8AFED600AA4C45 /* Main（主框架） */,
 				BC0147FA1C8AFED600AA4C45 /* FunPlay（视频） */,
-				BC0147F61C8AFED600AA4C45 /* Chat（聊天） */,
 				BC0147FE1C8AFED600AA4C45 /* Joke（百思） */,
+				BC0147F61C8AFED600AA4C45 /* Chat（聊天） */,
 				BC0148061C8AFED600AA4C45 /* Mine（我的） */,
 			);
 			path = Classes;
@@ -650,6 +674,8 @@
 		BC0147F71C8AFED600AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC014A0E1C8B05F900AA4C45 /* XHDDOnlineChatController.h */,
+				BC014A0F1C8B05F900AA4C45 /* XHDDOnlineChatController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -681,6 +707,8 @@
 		BC0147FB1C8AFED600AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC014A081C8B05D800AA4C45 /* XHDDOnlineFunPlayController.h */,
+				BC014A091C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -712,6 +740,8 @@
 		BC0147FF1C8AFED600AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC014A0B1C8B05EE00AA4C45 /* XHDDOnlineJokeController.h */,
+				BC014A0C1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -743,6 +773,12 @@
 		BC0148031C8AFED600AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC0149F91C8B020300AA4C45 /* XHDDOnlineMainController.h */,
+				BC0149FA1C8B020300AA4C45 /* XHDDOnlineMainController.m */,
+				BC0149FC1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.h */,
+				BC0149FD1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m */,
+				BC0149FF1C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.h */,
+				BC014A001C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -774,6 +810,8 @@
 		BC0148071C8AFED600AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC014A111C8B060300AA4C45 /* XHDDOnlineMineController.h */,
+				BC014A121C8B060300AA4C45 /* XHDDOnlineMineController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -871,6 +909,8 @@
 		BC0148211C8AFF0300AA4C45 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC014A051C8B056800AA4C45 /* XHDDOnlineSliderController.h */,
+				BC014A061C8B056800AA4C45 /* XHDDOnlineSliderController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1404,6 +1444,7 @@
 		BC0147B51C8AFCAF00AA4C45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XHDDOnline;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = JXHDev;
 				TargetAttributes = {
@@ -1533,6 +1574,7 @@
 				BC0149AE1C8B014A00AA4C45 /* NSSet+RACSequenceAdditions.m in Sources */,
 				BC0149BC1C8B014A00AA4C45 /* RACDisposable.m in Sources */,
 				BC0149901C8B014A00AA4C45 /* MJRefreshBackGifFooter.m in Sources */,
+				BC014A0A1C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m in Sources */,
 				BC0149B41C8B014A00AA4C45 /* RACArraySequence.m in Sources */,
 				BC0149A41C8B014A00AA4C45 /* NSIndexSet+RACSequenceAdditions.m in Sources */,
 				BC0149C81C8B014A00AA4C45 /* RACKVOProxy.m in Sources */,
@@ -1540,6 +1582,7 @@
 				BC0149991C8B014A00AA4C45 /* UIScrollView+MJRefresh.m in Sources */,
 				BC0149B51C8B014A00AA4C45 /* RACBehaviorSubject.m in Sources */,
 				BC0149E61C8B014A00AA4C45 /* UIAlertView+RACSignalSupport.m in Sources */,
+				BC014A011C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m in Sources */,
 				BC0149C91C8B014A00AA4C45 /* RACKVOTrampoline.m in Sources */,
 				BC0149F51C8B014A00AA4C45 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				BC01481F1C8AFED600AA4C45 /* XHNetHelp.m in Sources */,
@@ -1559,6 +1602,7 @@
 				BC0149D91C8B014A00AA4C45 /* RACStringSequence.m in Sources */,
 				BC0149C71C8B014A00AA4C45 /* RACKVOChannel.m in Sources */,
 				BC0147C21C8AFCAF00AA4C45 /* main.m in Sources */,
+				BC014A071C8B056800AA4C45 /* XHDDOnlineSliderController.m in Sources */,
 				BC0148921C8B013300AA4C45 /* ViewController+MASAdditions.m in Sources */,
 				BC01481C1C8AFED600AA4C45 /* NSObject+Extension.m in Sources */,
 				BC01498D1C8B014A00AA4C45 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1572,6 +1616,7 @@
 				BC0149BF1C8B014A00AA4C45 /* RACEagerSequence.m in Sources */,
 				BC0149AF1C8B014A00AA4C45 /* NSString+RACKeyPathUtilities.m in Sources */,
 				BC0149CF1C8B014A00AA4C45 /* RACReturnSignal.m in Sources */,
+				BC014A101C8B05F900AA4C45 /* XHDDOnlineChatController.m in Sources */,
 				BC0148651C8B011C00AA4C45 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				BC0149971C8B014A00AA4C45 /* MJRefreshConst.m in Sources */,
 				BC0149BB1C8B014A00AA4C45 /* RACDelegateProxy.m in Sources */,
@@ -1579,6 +1624,7 @@
 				BC0149E51C8B014A00AA4C45 /* UIActionSheet+RACSignalSupport.m in Sources */,
 				BC01481E1C8AFED600AA4C45 /* UIViewController+SpliteView.m in Sources */,
 				BC0149D11C8B014A00AA4C45 /* RACScopedDisposable.m in Sources */,
+				BC0149FB1C8B020300AA4C45 /* XHDDOnlineMainController.m in Sources */,
 				BC0149DE1C8B014A00AA4C45 /* RACTargetQueueScheduler.m in Sources */,
 				BC0149D61C8B014A00AA4C45 /* RACSignalProvider.d in Sources */,
 				BC0148301C8B010800AA4C45 /* README.md in Sources */,
@@ -1615,6 +1661,7 @@
 				BC0149EB1C8B014A00AA4C45 /* UIControl+RACSignalSupportPrivate.m in Sources */,
 				BC0149B71C8B014A00AA4C45 /* RACChannel.m in Sources */,
 				BC01498C1C8B014A00AA4C45 /* MJRefreshHeader.m in Sources */,
+				BC014A131C8B060300AA4C45 /* XHDDOnlineMineController.m in Sources */,
 				BC01499B1C8B014A00AA4C45 /* README.md in Sources */,
 				BC0149D21C8B014A00AA4C45 /* RACSequence.m in Sources */,
 				BC0149A81C8B014A00AA4C45 /* NSObject+RACDescription.m in Sources */,
@@ -1624,9 +1671,11 @@
 				BC01499E1C8B014A00AA4C45 /* MKAnnotationView+RACSignalSupport.m in Sources */,
 				BC0149891C8B014A00AA4C45 /* MJRefreshBackFooter.m in Sources */,
 				BC0148331C8B010800AA4C45 /* UIViewController+RESideMenu.m in Sources */,
+				BC0149FE1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m in Sources */,
 				BC01498B1C8B014A00AA4C45 /* MJRefreshFooter.m in Sources */,
 				BC0149E41C8B014A00AA4C45 /* RACValueTransformer.m in Sources */,
 				BC0149C41C8B014A00AA4C45 /* RACGroupedSignal.m in Sources */,
+				BC014A0D1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
