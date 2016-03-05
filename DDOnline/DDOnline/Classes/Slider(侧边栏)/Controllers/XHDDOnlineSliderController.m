@@ -25,6 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//点击消失侧边栏
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [self.sideMenuViewController hideMenuViewController];
