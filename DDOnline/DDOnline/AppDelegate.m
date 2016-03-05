@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "RESideMenu.h"
+#import "XHDDOnlineMainController.h"
+#import "XHDDOnlineSliderController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +19,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    //1.设置根视图控制器
+    [self setRootViewController];
+    
     return YES;
+}
+- (void)setRootViewController{
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    RESideMenu *sideMenu = [[RESideMenu alloc] initWithContentViewController:[[XHDDOnlineMainController alloc] init] leftMenuViewController:[[XHDDOnlineSliderController alloc] init] rightMenuViewController:nil];
+    
+    self.window.rootViewController = sideMenu;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

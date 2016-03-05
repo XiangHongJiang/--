@@ -6,7 +6,7 @@
 //  Copyright © 2016年 JXH. All rights reserved.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import "AFHTTPSessionManager.h"
 
 @interface XHNetHelp : AFHTTPSessionManager
 /**

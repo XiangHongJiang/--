@@ -7,6 +7,7 @@
 //
 
 #import "XHDDOnlineRootNavigationController.h"
+#import "RESideMenu.h"
 
 @interface XHDDOnlineRootNavigationController ()
 
@@ -24,14 +25,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)signInView{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
 }
-*/
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    if (self.childViewControllers.count == 0) {
+        
+        //添加侧边栏按钮
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"ic_filter_0_n"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(splite)];
+        viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(scan)];
+#warning 此处设置登录状态视图,与哔哩哔哩登录侧边栏相似
+//        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:<#(nonnull UIView *)#>]
+    }
+    
+    
+    [super pushViewController:viewController animated:animated];
+    
+}
+- (void)splite{
+    
+    //侧边栏展开
+    [self.sideMenuViewController presentLeftMenuViewController];
+}
+//扫描
+- (void)scan{
+
+    JLog(@"进入扫描");
+    
+}
 
 @end
