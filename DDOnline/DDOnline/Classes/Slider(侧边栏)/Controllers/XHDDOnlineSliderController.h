@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XHDDOnlineSliderController : UIViewController
+@interface XHDDOnlineSliderController : UITableViewController
 
 @end
