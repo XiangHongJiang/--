@@ -11,7 +11,7 @@
 
 @interface XHDDOnlineFunPlayTableView : UITableView
 /** *  管理番剧的模型 */
-@property (nonatomic, copy) XHDDOnlineFunPlayModel *funPlayModel;
+@property (nonatomic, strong) XHDDOnlineFunPlayModel *funPlayModel;
 /** *  创建加载视图 */
 + (instancetype)funPlayTableView;
 @end

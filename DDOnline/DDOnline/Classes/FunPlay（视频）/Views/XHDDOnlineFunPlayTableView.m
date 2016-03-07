@@ -31,21 +31,38 @@
 
     self.frame = CGRectMake(newSuperview.frame.size.width, 0,newSuperview.frame.size.width, newSuperview.frame.size.height);
 }
-
+#pragma mark - tableView Delegate
+/** 返回组数    */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return self.funPlayModel.result.categories.count + 2;
+}
+/**  返回行数   */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 20;//self.funPlayDataArray.count;
+    return 1;//self.funPlayDataArray.count;
 }
-
+/**  返回tableViewCell    */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     
-    NSLog(@"-------Bounds------%@",NSStringFromCGRect(self.frame));
     cell.textLabel.text = @"test";
     
     return cell;
 
 }
+/** 返回重复利用的组头*/
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
 
+    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"reuseHeadView"];
+    
+    if (view == nil) {
+        
+        view = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"reuseHeadView"];
+       
+    }
+    
+    return view;
+}
 @end

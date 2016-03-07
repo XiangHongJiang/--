@@ -16,9 +16,9 @@
 /** *  管理的scrollView */
 @property (nonatomic, weak) UIScrollView * scrollView;
 /** *  管理的直播tableView */
-@property (nonatomic, weak) UITableView * liveTableView;
+@property (nonatomic, weak) XHDDOnlineLiveTableView * liveTableView;
 /** *  管理的番剧tableView */
-@property (nonatomic, weak) UITableView * funPlayTableView;
+@property (nonatomic, weak) XHDDOnlineFunPlayTableView * funPlayTableView;
 /** *  funPlayModel */
 @property (nonatomic, strong) XHDDOnlineFunPlayModel *funPlayModel;
 /** *  liveModel */
@@ -44,6 +44,9 @@
     
     //请求数据
     [self requestFunPlayData];
+    
+    //添加下拉刷新
+    [self addRefresh];
 
 }
 
@@ -54,7 +57,7 @@
     //1.scorllView
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(JMargin * 0.5, JTopSpace, JScreenWidth - JMargin, JScreenHeight - JTopSpace - JTabBarHeight)];
     [self.view addSubview:scrollView];
-    scrollView.backgroundColor = JRandomColor;
+    scrollView.backgroundColor = JColorNavBg;
     //设置属性
     self.scrollView = scrollView;
     //设置按页滚动
@@ -73,7 +76,7 @@
 - (void)loadLiveView{
     //1.liveTableView
     XHDDOnlineLiveTableView *liveTableView = [XHDDOnlineLiveTableView liveTableView];    
-    liveTableView.backgroundColor = JColorGray;
+    liveTableView.backgroundColor = JColorNavBg;
     self.liveTableView = liveTableView;
     [self.scrollView addSubview:liveTableView];
     
@@ -84,7 +87,12 @@
     XHDDOnlineFunPlayTableView *funPlayTableView = [XHDDOnlineFunPlayTableView funPlayTableView];
     self.funPlayTableView = funPlayTableView;
     [self.scrollView addSubview:funPlayTableView];
-    funPlayTableView.backgroundColor = JColorGray;
+    funPlayTableView.backgroundColor = JColorNavBg;
+}
+/** *  添加刷新 */
+- (void)addRefresh{
+
+    self.funPlayTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestFunPlayData)];
 }
 #pragma mark - requestData
 /** 请求数据    */
@@ -99,11 +107,14 @@
             //解析
             NSDictionary *funPlayDict = [NSJSONSerialization JSONObjectWithData:result options:NSJSONReadingMutableContainers error:nil];
             
+            //转模型
             XHDDOnlineFunPlayModel *funPlayModel = [XHDDOnlineFunPlayModel mj_objectWithKeyValues:funPlayDict];
             
-            self.funPlayModel = funPlayModel;
+            //赋值刷新
+            weakSelf.funPlayTableView.funPlayModel = funPlayModel;
             
-            [weakSelf.funPlayTableView reloadData];
+            //结束刷新
+            [weakSelf.funPlayTableView.mj_header endRefreshing];
             
         }
         else{//请求失败

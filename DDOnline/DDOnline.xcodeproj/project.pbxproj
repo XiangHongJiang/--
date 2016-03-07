@@ -261,11 +261,11 @@
 		BC1AB0C11C8C1DBB0007EDF4 /* Navi_more_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0BE1C8C1DBB0007EDF4 /* Navi_more_n@3x.png */; };
 		BC1AB0CD1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */; };
 		BC1AB0D01C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */; };
-		BC1AB0D41C8D17C40007EDF4 /* XHDDOnlineLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */; };
-		BC1AB0D51C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */; };
-		BC1AB0DA1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */; };
-		BC1AB0DB1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */; };
 		BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */; };
+		BC35F5831C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */; };
+		BC35F5861C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5851C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.m */; };
+		BC35F58A1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */; };
+		BC35F58B1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */; };
 		BC8D615C1C8D794A0043F18F /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */; };
 		BC8D615D1C8D794A0043F18F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61491C8D794A0043F18F /* MJExtensionConst.m */; };
 		BC8D615E1C8D794A0043F18F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D614B1C8D794A0043F18F /* MJFoundation.m */; };
@@ -632,14 +632,15 @@
 		BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayTableView.m; sourceTree = "<group>"; };
 		BC1AB0CE1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveTableView.h; sourceTree = "<group>"; };
 		BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveTableView.m; sourceTree = "<group>"; };
-		BC1AB0D11C8D17C40007EDF4 /* XHDDOnlineLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveCell.h; sourceTree = "<group>"; };
-		BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveCell.m; sourceTree = "<group>"; };
-		BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineLiveCell.xib; sourceTree = "<group>"; };
-		BC1AB0D71C8D18180007EDF4 /* XHDDOnlineFunPlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayCell.h; sourceTree = "<group>"; };
-		BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayCell.m; sourceTree = "<group>"; };
-		BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineFunPlayCell.xib; sourceTree = "<group>"; };
 		BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveModel.h; sourceTree = "<group>"; };
 		BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveModel.m; sourceTree = "<group>"; };
+		BC35F5811C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayLatestCell.h; sourceTree = "<group>"; };
+		BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayLatestCell.m; sourceTree = "<group>"; };
+		BC35F5841C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayLatestCollectionView.h; sourceTree = "<group>"; };
+		BC35F5851C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayLatestCollectionView.m; sourceTree = "<group>"; };
+		BC35F5871C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLatestUpdateCell.h; sourceTree = "<group>"; };
+		BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLatestUpdateCell.m; sourceTree = "<group>"; };
+		BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineLatestUpdateCell.xib; sourceTree = "<group>"; };
 		BC8D61451C8D794A0043F18F /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		BC8D61471C8D794A0043F18F /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -857,6 +858,8 @@
 				BC1AB0CB1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.h */,
 				BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */,
 				BC1AB0D61C8D17D50007EDF4 /* Cell */,
+				BC35F5841C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.h */,
+				BC35F5851C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1513,12 +1516,11 @@
 		BC1AB0D61C8D17D50007EDF4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BC1AB0D11C8D17C40007EDF4 /* XHDDOnlineLiveCell.h */,
-				BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */,
-				BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */,
-				BC1AB0D71C8D18180007EDF4 /* XHDDOnlineFunPlayCell.h */,
-				BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */,
-				BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */,
+				BC35F5811C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.h */,
+				BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */,
+				BC35F5871C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.h */,
+				BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */,
+				BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -1718,7 +1720,6 @@
 				BC1AB03C1C8C0BE40007EDF4 /* 014@2x.png in Resources */,
 				BC0147CD1C8AFCAF00AA4C45 /* Assets.xcassets in Resources */,
 				BC1AB0981C8C0BE40007EDF4 /* bowtie@2x.png in Resources */,
-				BC1AB0DB1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib in Resources */,
 				BC1AB0591C8C0BE40007EDF4 /* 043@2x.png in Resources */,
 				BC1AB09D1C8C0BE40007EDF4 /* goberserk@2x.png in Resources */,
 				BC0149871C8B014A00AA4C45 /* LICENSE in Resources */,
@@ -1762,6 +1763,7 @@
 				BC1AB0331C8C0BE40007EDF4 /* 005@2x.png in Resources */,
 				BC1AB03F1C8C0BE40007EDF4 /* 017@2x.png in Resources */,
 				BC1AB06C1C8C0BE40007EDF4 /* 062@2x.png in Resources */,
+				BC35F58B1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib in Resources */,
 				BC014A991C8B2FEF00AA4C45 /* Navi_scan_n@3x.png in Resources */,
 				BC014A931C8B242400AA4C45 /* TabBar_Client_4_p@3x.png in Resources */,
 				BC1AB0951C8C0BE40007EDF4 /* 103@2x.png in Resources */,
@@ -1812,7 +1814,6 @@
 				BC1AB0791C8C0BE40007EDF4 /* 075@2x.png in Resources */,
 				BC1AAFB01C8C0BD40007EDF4 /* userinfo_icon_male.png in Resources */,
 				BC1AB0381C8C0BE40007EDF4 /* 010@2x.png in Resources */,
-				BC1AB0D51C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib in Resources */,
 				BC1AB05F1C8C0BE40007EDF4 /* 049@2x.png in Resources */,
 				BC014A7C1C8B242400AA4C45 /* TabBar_Client_1_n.png in Resources */,
 				BC014A851C8B242400AA4C45 /* TabBar_Client_2_p.png in Resources */,
@@ -1910,7 +1911,7 @@
 				BC01498D1C8B014A00AA4C45 /* MJRefreshAutoGifFooter.m in Sources */,
 				BC01499A1C8B014A00AA4C45 /* UIView+MJExtension.m in Sources */,
 				BC0149881C8B014A00AA4C45 /* MJRefreshAutoFooter.m in Sources */,
-				BC1AB0DA1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m in Sources */,
+				BC35F58A1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m in Sources */,
 				BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */,
 				BC8D61651C8D794A0043F18F /* NSObject+MJProperty.m in Sources */,
 				BC014A101C8B05F900AA4C45 /* XHDDOnlineChatController.m in Sources */,
@@ -1923,6 +1924,7 @@
 				BC8D61611C8D794A0043F18F /* MJPropertyType.m in Sources */,
 				BC8D61601C8D794A0043F18F /* MJPropertyKey.m in Sources */,
 				BC0148901C8B013300AA4C45 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				BC35F5861C8DA0860000FE64 /* XHDDOnlineFunPlayLatestCollectionView.m in Sources */,
 				BC01488C1C8B013300AA4C45 /* MASLayoutConstraint.m in Sources */,
 				BC01498F1C8B014A00AA4C45 /* MJRefreshAutoStateFooter.m in Sources */,
 				BC0148321C8B010800AA4C45 /* RESideMenu.m in Sources */,
@@ -1937,7 +1939,6 @@
 				BC0149921C8B014A00AA4C45 /* MJRefreshBackStateFooter.m in Sources */,
 				BC8D615C1C8D794A0043F18F /* MJDictionaryCache.m in Sources */,
 				BC01488D1C8B013300AA4C45 /* MASViewAttribute.m in Sources */,
-				BC1AB0D41C8D17C40007EDF4 /* XHDDOnlineLiveCell.m in Sources */,
 				BC01498C1C8B014A00AA4C45 /* MJRefreshHeader.m in Sources */,
 				BC014A131C8B060300AA4C45 /* XHDDOnlineMineController.m in Sources */,
 				BC01499B1C8B014A00AA4C45 /* README.md in Sources */,
@@ -1949,6 +1950,7 @@
 				BC0149FE1C8B021D00AA4C45 /* XHDDOnlineRootNavigationController.m in Sources */,
 				BC8D615F1C8D794A0043F18F /* MJProperty.m in Sources */,
 				BC01498B1C8B014A00AA4C45 /* MJRefreshFooter.m in Sources */,
+				BC35F5831C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m in Sources */,
 				BC014A0D1C8B05EE00AA4C45 /* XHDDOnlineJokeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

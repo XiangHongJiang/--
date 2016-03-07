@@ -7,12 +7,9 @@
 //
 
 #import "XHDDOnlineLiveTableView.h"
-#import "XHDDOnlineLiveCell.h"
 #import "XHDDOnlineLiveModel.h"
 
-
 @interface XHDDOnlineLiveTableView()<UITableViewDelegate, UITableViewDataSource>
-
 
 @end
 
@@ -61,7 +58,7 @@
     return cell;
     
 //    //复用cell
-//    XHDDOnlineLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineLiveCell" forIndexPath:indexPath];
+
 //    //赋值模型
 //    cell.liveModel = self.liveDataArray[indexPath.row];    
 //    //返回cell
