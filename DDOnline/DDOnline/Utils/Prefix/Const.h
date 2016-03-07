@@ -9,6 +9,24 @@
 #ifndef Const_h
 #define Const_h
 
+#pragma mark - 番剧
+static NSString *const kFunPlayUrl = @"http://bangumi.bilibili.com/api/app_index_page?_device=android&_hwid=bcbfd479c4762248&_ulv=10000&access_key=22478dfaad95807199e6d9f65dd9e539&appkey=c1b107428d337928&build=412001&platform=android&ts=1457336973000&sign=5978e02359c883ff2a86987f76ded418";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #pragma mark - 兼职卫士
 
 static NSString *const JBaseUrl = @"http://wap2.yojianzhi.com/";
