@@ -7,6 +7,7 @@
 //
 
 #import "XHDDOnlineFunPlayTableView.h"
+#import "XHDDOnlineFunPlayLatestCell.h"
 
 @interface XHDDOnlineFunPlayTableView()<UITableViewDataSource, UITableViewDelegate>
 
@@ -22,9 +23,16 @@
     funPlayTableView.delegate = funPlayTableView;
     funPlayTableView.dataSource = funPlayTableView;
     //注册cell
-    [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineFunPlayCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineFunPlayCell"];
+    [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategorysCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineCategorysCell"];
     
     return funPlayTableView;
+}
+
+- (void)setFunPlayModel:(XHDDOnlineFunPlayModel *)funPlayModel{
+    _funPlayModel = funPlayModel;
+    
+    //刷新数据
+    [self reloadData];
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview{
@@ -45,24 +53,52 @@
 /**  返回tableViewCell    */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+
+    if (indexPath.section == 0) {//第0组
     
-    cell.textLabel.text = @"test";
+        XHDDOnlineFunPlayLatestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineFunPlayLatestCell"];
+        if (cell == nil) {
+            
+            cell = [[XHDDOnlineFunPlayLatestCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"XHDDOnlineFunPlayLatestCell"];
+        }
+        cell.latestModel = self.funPlayModel.result.latestUpdate;
+ 
+        return cell;
+    }
     
-    return cell;
+    else{
+//        cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineCategorysCell"];
+        
+     UITableViewCell *cell = [[UITableViewCell alloc] init];
+        
+     cell.textLabel.text = @"test";
+        
+        return cell;
+    }
+
 
 }
 /** 返回重复利用的组头*/
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//
+//    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"reuseHeadView"];
+//    
+//    if (view == nil) {
+//        
+//        view = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"reuseHeadView"];
+//       
+//    }
+//    
+//    return view;
+//}
 
-    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"reuseHeadView"];
-    
-    if (view == nil) {
-        
-        view = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"reuseHeadView"];
-       
-    }
-    
-    return view;
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+
+    return @"123";
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return 200;
 }
 @end

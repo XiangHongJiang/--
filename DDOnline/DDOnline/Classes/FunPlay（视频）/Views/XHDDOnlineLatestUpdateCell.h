@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHDDOnlineFunPlayModel.h"
 
 @interface XHDDOnlineLatestUpdateCell : UICollectionViewCell
-
+/** *  latestModel */
+@property (nonatomic, strong) LatestList *latestModel;
 @end

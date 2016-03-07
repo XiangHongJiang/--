@@ -7,6 +7,7 @@
 //
 
 #import "XHDDOnlineLatestUpdateCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface XHDDOnlineLatestUpdateCell()
 
@@ -20,8 +21,24 @@
 
 @implementation XHDDOnlineLatestUpdateCell
 
-- (void)awakeFromNib {
-    // Initialization code
+- (void)awakeFromNib{
+
+    self.onlineNumber.backgroundColor = [UIColor colorWithRed:1.000 green:0.000 blue:0.000 alpha:0.500];
+}
+
+- (void)setLatestModel:(LatestList *)latestModel{
+
+    _latestModel = latestModel;
+
+    
+#warning 赋值数据
+    JLog(@"%p",latestModel);
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:latestModel.cover]];
+    self.onlineNumber.text = [NSString stringWithFormat:@"%@人在看",latestModel.watchingCount] ;
+    self.nameLabel.text = latestModel.title;
+    self.latestPlay.text = [NSString stringWithFormat:@"第%@话",latestModel.total_count];
+    self.latestTime.text = @"today";
+    [self.onlineNumber sizeToFit];
 }
 
 @end
