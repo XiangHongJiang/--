@@ -8,6 +8,7 @@
 
 #import "XHDDOnlineFunPlayTableView.h"
 #import "XHDDOnlineFunPlayLatestCell.h"
+#import "XHDDOnlineFunPlayHeaderView.h"
 
 @interface XHDDOnlineFunPlayTableView()<UITableViewDataSource, UITableViewDelegate>
 
@@ -18,10 +19,11 @@
 + (instancetype)funPlayTableView{
 
     //创建对象
-    XHDDOnlineFunPlayTableView *funPlayTableView = [[XHDDOnlineFunPlayTableView alloc] init];
+    XHDDOnlineFunPlayTableView *funPlayTableView = [[XHDDOnlineFunPlayTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     //设置代理
     funPlayTableView.delegate = funPlayTableView;
     funPlayTableView.dataSource = funPlayTableView;
+    
     //注册cell
     [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategorysCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineCategorysCell"];
     
@@ -79,26 +81,45 @@
 
 }
 /** 返回重复利用的组头*/
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//
-//    UIView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"reuseHeadView"];
-//    
-//    if (view == nil) {
-//        
-//        view = [[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"reuseHeadView"];
-//       
-//    }
-//    
-//    return view;
-//}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    XHDDOnlineFunPlayHeaderView *headerView = [XHDDOnlineFunPlayHeaderView headerViewWithTableView:tableView];
+  
 
-    return @"123";
+    if (section == 0) {
+        
+        headerView.headerImageView.image = [UIImage imageNamed:@"home_region_icon_33"];
+        headerView.nameLabel.text = @"新番连载";
+        
+    }
+    else if(section == 1){
+        
+        headerView.headerImageView.image = [UIImage imageNamed:@"home_region_icon_32"];
+        headerView.nameLabel.text = @"分类推荐";
+    }
+    else
+    {
+        headerView.headerImageView.image = [UIImage imageNamed:@"home_region_icon_34"];
+        
+        CategoriesModel *category =self.funPlayModel.result.categories[section - 2];
+        headerView.nameLabel.text = category.category.tag_name;
+    }
+
+ 
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+
+    return 30;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    if (indexPath.section == 0) {
+        return 320;
+    }
     return 200;
 }
 @end

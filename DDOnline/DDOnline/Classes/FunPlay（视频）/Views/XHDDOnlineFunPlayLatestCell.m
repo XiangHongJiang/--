@@ -45,7 +45,7 @@
     flowLayout.minimumInteritemSpacing = 10;
     
     //创建对象
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, JScreenWidth - JMargin, 200) collectionViewLayout:flowLayout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, JScreenWidth - JMargin, 320) collectionViewLayout:flowLayout];
     
     [self.contentView addSubview:collectionView];
     
