@@ -352,6 +352,13 @@
 		BC1AB0BF1C8C1DBB0007EDF4 /* Navi_more_n.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0BC1C8C1DBB0007EDF4 /* Navi_more_n.png */; };
 		BC1AB0C01C8C1DBB0007EDF4 /* Navi_more_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0BD1C8C1DBB0007EDF4 /* Navi_more_n@2x.png */; };
 		BC1AB0C11C8C1DBB0007EDF4 /* Navi_more_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0BE1C8C1DBB0007EDF4 /* Navi_more_n@3x.png */; };
+		BC1AB0CD1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */; };
+		BC1AB0D01C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */; };
+		BC1AB0D41C8D17C40007EDF4 /* XHDDOnlineLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */; };
+		BC1AB0D51C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */; };
+		BC1AB0DA1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */; };
+		BC1AB0DB1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */; };
+		BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -894,6 +901,18 @@
 		BC1AB0BC1C8C1DBB0007EDF4 /* Navi_more_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navi_more_n.png; sourceTree = "<group>"; };
 		BC1AB0BD1C8C1DBB0007EDF4 /* Navi_more_n@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Navi_more_n@2x.png"; sourceTree = "<group>"; };
 		BC1AB0BE1C8C1DBB0007EDF4 /* Navi_more_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Navi_more_n@3x.png"; sourceTree = "<group>"; };
+		BC1AB0CB1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayTableView.h; sourceTree = "<group>"; };
+		BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayTableView.m; sourceTree = "<group>"; };
+		BC1AB0CE1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveTableView.h; sourceTree = "<group>"; };
+		BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveTableView.m; sourceTree = "<group>"; };
+		BC1AB0D11C8D17C40007EDF4 /* XHDDOnlineLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveCell.h; sourceTree = "<group>"; };
+		BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveCell.m; sourceTree = "<group>"; };
+		BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineLiveCell.xib; sourceTree = "<group>"; };
+		BC1AB0D71C8D18180007EDF4 /* XHDDOnlineFunPlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayCell.h; sourceTree = "<group>"; };
+		BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayCell.m; sourceTree = "<group>"; };
+		BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineFunPlayCell.xib; sourceTree = "<group>"; };
+		BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveModel.h; sourceTree = "<group>"; };
+		BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1070,6 +1089,8 @@
 		BC0147FC1C8AFED600AA4C45 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */,
+				BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1077,6 +1098,11 @@
 		BC0147FD1C8AFED600AA4C45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BC1AB0CE1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.h */,
+				BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */,
+				BC1AB0CB1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.h */,
+				BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */,
+				BC1AB0D61C8D17D50007EDF4 /* Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1945,6 +1971,19 @@
 			path = emoji;
 			sourceTree = "<group>";
 		};
+		BC1AB0D61C8D17D50007EDF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AB0D11C8D17C40007EDF4 /* XHDDOnlineLiveCell.h */,
+				BC1AB0D21C8D17C40007EDF4 /* XHDDOnlineLiveCell.m */,
+				BC1AB0D31C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib */,
+				BC1AB0D71C8D18180007EDF4 /* XHDDOnlineFunPlayCell.h */,
+				BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */,
+				BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2110,6 +2149,7 @@
 				BC1AB03C1C8C0BE40007EDF4 /* 014@2x.png in Resources */,
 				BC0147CD1C8AFCAF00AA4C45 /* Assets.xcassets in Resources */,
 				BC1AB0981C8C0BE40007EDF4 /* bowtie@2x.png in Resources */,
+				BC1AB0DB1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib in Resources */,
 				BC1AB0591C8C0BE40007EDF4 /* 043@2x.png in Resources */,
 				BC1AB09D1C8C0BE40007EDF4 /* goberserk@2x.png in Resources */,
 				BC0149871C8B014A00AA4C45 /* LICENSE in Resources */,
@@ -2203,6 +2243,7 @@
 				BC1AB0791C8C0BE40007EDF4 /* 075@2x.png in Resources */,
 				BC1AAFB01C8C0BD40007EDF4 /* userinfo_icon_male.png in Resources */,
 				BC1AB0381C8C0BE40007EDF4 /* 010@2x.png in Resources */,
+				BC1AB0D51C8D17C40007EDF4 /* XHDDOnlineLiveCell.xib in Resources */,
 				BC1AB05F1C8C0BE40007EDF4 /* 049@2x.png in Resources */,
 				BC014A7C1C8B242400AA4C45 /* TabBar_Client_1_n.png in Resources */,
 				BC014A851C8B242400AA4C45 /* TabBar_Client_2_p.png in Resources */,
@@ -2328,6 +2369,7 @@
 				BC01481F1C8AFED600AA4C45 /* XHNetHelp.m in Sources */,
 				BC0149F31C8B014A00AA4C45 /* UISwitch+RACSignalSupport.m in Sources */,
 				BC0148621C8B011C00AA4C45 /* AFAutoPurgingImageCache.m in Sources */,
+				BC1AB0CD1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m in Sources */,
 				BC0149E31C8B014A00AA4C45 /* RACUnit.m in Sources */,
 				BC0149CB1C8B014A00AA4C45 /* RACObjCRuntime.m in Sources */,
 				BC01499C1C8B014A00AA4C45 /* LICENSE.md in Sources */,
@@ -2351,9 +2393,11 @@
 				BC0149ED1C8B014A00AA4C45 /* UIGestureRecognizer+RACSignalSupport.m in Sources */,
 				BC0149BA1C8B014A00AA4C45 /* RACCompoundDisposableProvider.d in Sources */,
 				BC0149F21C8B014A00AA4C45 /* UIStepper+RACSignalSupport.m in Sources */,
+				BC1AB0DA1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m in Sources */,
 				BC0149E01C8B014A00AA4C45 /* RACTuple.m in Sources */,
 				BC0149E21C8B014A00AA4C45 /* RACUnarySequence.m in Sources */,
 				BC0149BF1C8B014A00AA4C45 /* RACEagerSequence.m in Sources */,
+				BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */,
 				BC0149AF1C8B014A00AA4C45 /* NSString+RACKeyPathUtilities.m in Sources */,
 				BC0149CF1C8B014A00AA4C45 /* RACReturnSignal.m in Sources */,
 				BC014A101C8B05F900AA4C45 /* XHDDOnlineChatController.m in Sources */,
@@ -2399,12 +2443,14 @@
 				BC0149921C8B014A00AA4C45 /* MJRefreshBackStateFooter.m in Sources */,
 				BC01488D1C8B013300AA4C45 /* MASViewAttribute.m in Sources */,
 				BC0149EB1C8B014A00AA4C45 /* UIControl+RACSignalSupportPrivate.m in Sources */,
+				BC1AB0D41C8D17C40007EDF4 /* XHDDOnlineLiveCell.m in Sources */,
 				BC0149B71C8B014A00AA4C45 /* RACChannel.m in Sources */,
 				BC01498C1C8B014A00AA4C45 /* MJRefreshHeader.m in Sources */,
 				BC014A131C8B060300AA4C45 /* XHDDOnlineMineController.m in Sources */,
 				BC01499B1C8B014A00AA4C45 /* README.md in Sources */,
 				BC0149D21C8B014A00AA4C45 /* RACSequence.m in Sources */,
 				BC0149A81C8B014A00AA4C45 /* NSObject+RACDescription.m in Sources */,
+				BC1AB0D01C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m in Sources */,
 				BC01485E1C8B011C00AA4C45 /* AFURLResponseSerialization.m in Sources */,
 				BC0149EE1C8B014A00AA4C45 /* UIImagePickerController+RACSignalSupport.m in Sources */,
 				BC01498E1C8B014A00AA4C45 /* MJRefreshAutoNormalFooter.m in Sources */,

@@ -84,7 +84,7 @@
     viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:[[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:selectedImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     //添加
     [self addChildViewController:nav];
-    
+
 }
 //添加加号按钮
 - (void)addAddButton{
