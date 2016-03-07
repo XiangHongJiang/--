@@ -16,7 +16,7 @@
 @end
 
 @implementation XHDDOnlineLiveTableView
-
+#pragma mark - create
 + (instancetype)liveTableView{
 
     //创建对象
@@ -31,6 +31,11 @@
   
 }
 
+- (void)willMoveToSuperview:(UIView *)newSuperview{
+
+    self.frame = CGRectMake(0, 0, newSuperview.frame.size.width, newSuperview.frame.size.height);
+}
+#pragma mark - setter
 - (void)setLiveDataArray:(NSArray *)liveDataArray{
 
     //设置数据源
@@ -38,21 +43,28 @@
     //刷新数据
     [self reloadData];
 }
-
 #pragma mark - tableView Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return self.liveDataArray.count;
+    return 20;//self.liveDataArray.count;
 }
+#pragma mark - tableView DataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    //复用cell
-    XHDDOnlineLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineLiveCell" forIndexPath:indexPath];
-    //赋值模型
-    cell.liveModel = self.liveDataArray[indexPath.row];    
-    //返回cell
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    
+    cell.textLabel.text = @"test";
+        
     return cell;
     
+//    //复用cell
+//    XHDDOnlineLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineLiveCell" forIndexPath:indexPath];
+//    //赋值模型
+//    cell.liveModel = self.liveDataArray[indexPath.row];    
+//    //返回cell
+//    return cell;
+    
 }
+
 
 @end

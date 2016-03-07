@@ -10,14 +10,11 @@
 
 @implementation XHDDOnlineFunPlayCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
+- (void)setFunPlayModel:(XHDDOnlineFunPlayModel *)funPlayModel{
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    _funPlayModel = funPlayModel;
+#warning 设置布局
+    
 }
 
 @end

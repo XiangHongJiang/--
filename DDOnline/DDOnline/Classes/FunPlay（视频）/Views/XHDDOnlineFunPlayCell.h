@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHDDOnlineFunPlayModel.h"
 
 @interface XHDDOnlineFunPlayCell : UITableViewCell
-
+/**
+ *  funPlayModel
+ */
+@property (nonatomic, strong) XHDDOnlineFunPlayModel *funPlayModel;
 @end

@@ -359,6 +359,7 @@
 		BC1AB0DA1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0D81C8D18180007EDF4 /* XHDDOnlineFunPlayCell.m */; };
 		BC1AB0DB1C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */; };
 		BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */; };
+		BCBBEF2D1C8D206800485428 /* XHDDOnlineFunPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBBEF2C1C8D206800485428 /* XHDDOnlineFunPlayModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -913,6 +914,8 @@
 		BC1AB0D91C8D18180007EDF4 /* XHDDOnlineFunPlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineFunPlayCell.xib; sourceTree = "<group>"; };
 		BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLiveModel.h; sourceTree = "<group>"; };
 		BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLiveModel.m; sourceTree = "<group>"; };
+		BCBBEF2B1C8D206800485428 /* XHDDOnlineFunPlayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayModel.h; sourceTree = "<group>"; };
+		BCBBEF2C1C8D206800485428 /* XHDDOnlineFunPlayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1091,6 +1094,8 @@
 			children = (
 				BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */,
 				BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */,
+				BCBBEF2B1C8D206800485428 /* XHDDOnlineFunPlayModel.h */,
+				BCBBEF2C1C8D206800485428 /* XHDDOnlineFunPlayModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2327,6 +2332,7 @@
 				BC01498A1C8B014A00AA4C45 /* MJRefreshComponent.m in Sources */,
 				BC0149C51C8B014A00AA4C45 /* RACImmediateScheduler.m in Sources */,
 				BC0149D71C8B014A00AA4C45 /* RACSignalSequence.m in Sources */,
+				BCBBEF2D1C8D206800485428 /* XHDDOnlineFunPlayModel.m in Sources */,
 				BC0148911C8B013300AA4C45 /* View+MASAdditions.m in Sources */,
 				BC0149E81C8B014A00AA4C45 /* UIButton+RACCommandSupport.m in Sources */,
 				BC0149B81C8B014A00AA4C45 /* RACCommand.m in Sources */,

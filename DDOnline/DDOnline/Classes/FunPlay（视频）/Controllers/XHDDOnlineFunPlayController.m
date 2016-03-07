@@ -46,44 +46,39 @@
 - (void)configScrollView{
 
     //1.scorllView
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(JMargin, JTopSpace, JScreenWidth - JMargin * 2, JScreenHeight - JTopSpace - JTabBarHeight)];
     [self.view addSubview:scrollView];
-    
-    scrollView.contentInset = UIEdgeInsetsMake(JTopSpace, 0, JTopSpace, 0);
-    scrollView.contentSize = CGSizeMake(JScreenWidth * 2, 0);
     scrollView.backgroundColor = JRandomColor;
     //设置属性
     self.scrollView = scrollView;
-    
     //设置按页滚动
     scrollView.pagingEnabled = YES;
-    
+    scrollView.bounces = NO;
     //设置滚动条位置
-    scrollView.showsHorizontalScrollIndicator = YES;
+    scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator = NO;
-    
-    scrollView.scrollIndicatorInsets = UIEdgeInsetsMake(-scrollView.bounds.size.height, 0, scrollView.bounds.size.height, 0);
-    
     //设置代理
-    scrollView.delegate = self;
+    scrollView.delegate = self;    
+    scrollView.contentSize = CGSizeMake(JScreenWidth * 2, 0);
+    
+    
 }
 //加载直播视图
 - (void)loadLiveView{
     //1.liveTableView
-    XHDDOnlineLiveTableView *liveTableView = [XHDDOnlineLiveTableView liveTableView];
+    XHDDOnlineLiveTableView *liveTableView = [XHDDOnlineLiveTableView liveTableView];    
+    liveTableView.backgroundColor = JColorGray;
     self.liveTableView = liveTableView;
     [self.scrollView addSubview:liveTableView];
-    
-    
-    
     
 }
 //加载番剧视图
 - (void)loadFunPlayView{
     //1.funPlayTableView
-
-//    XHDDOnlineFunPlayTableView *funPlayTableView = [XHDDOnlineFunPlayTableView ]
-
+    XHDDOnlineFunPlayTableView *funPlayTableView = [XHDDOnlineFunPlayTableView funPlayTableView];
+    self.funPlayTableView = funPlayTableView;
+    [self.scrollView addSubview:funPlayTableView];
+    funPlayTableView.backgroundColor = JColorGray;
 }
 
 

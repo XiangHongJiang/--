@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface XHDDOnlineFunPlayTableView : UITableView
-
+/** *  管理的直播的数据源 */
+@property (nonatomic, copy) NSArray *funPlayDataArray;
+/** *  创建加载视图 */
++ (instancetype)funPlayTableView;
 @end
