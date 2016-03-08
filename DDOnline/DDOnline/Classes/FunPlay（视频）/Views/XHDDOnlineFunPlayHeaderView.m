@@ -28,7 +28,7 @@
         
         //添加子视图与手势
         [self setupSubViews];
-        
+                
     }
     
     return self;
@@ -42,7 +42,7 @@
     
     [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.top.bottom.equalTo(self.contentView);
+        make.top.bottom.equalTo(0);
         make.left.equalTo(10);
         make.width.equalTo(30);
     }];
@@ -57,17 +57,17 @@
         
         make.bottom.top.equalTo(self.contentView);
         make.left.equalTo(self.headerImageView.mas_right).offset(10);
-        make.width.equalTo(100);
+        make.width.equalTo(150);
     }];
 
     
     
     //3.进去看看Label
-    UILabel *label = [[UILabel alloc] init];
-    label.backgroundColor = JColorGray;
+//    UILabel *label = [[UILabel alloc] init];
+//    label.backgroundColor = JColorGray;
     
-    label.layer.cornerRadius = 4;
-    label.layer.masksToBounds = YES;
+//    label.layer.cornerRadius = 4;
+//    label.layer.masksToBounds = YES;
     
 //    label.textAlignment = NSTextAlignmentCenter;
 //    label.font = [UIFont systemFontOfSize:13];

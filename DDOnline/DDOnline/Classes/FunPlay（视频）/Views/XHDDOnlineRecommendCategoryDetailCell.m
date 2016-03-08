@@ -22,6 +22,9 @@
     _categoryDetailModel = categoryDetailModel;
     
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:categoryDetailModel.cover]];
+    self.imageView.layer.cornerRadius = 4;
+    self.imageView.layer.masksToBounds = YES;
+    
     self.tagName.text = categoryDetailModel.tag_name;
 
 }

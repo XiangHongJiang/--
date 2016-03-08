@@ -24,6 +24,8 @@
 - (void)awakeFromNib{
 
     self.onlineNumber.backgroundColor = [UIColor colorWithRed:1.000 green:0.000 blue:0.000 alpha:0.500];
+    self.imageView.layer.cornerRadius = 4;
+    self.imageView.layer.masksToBounds = YES;
 }
 
 - (void)setLatestModel:(LatestList *)latestModel{

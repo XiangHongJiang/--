@@ -10,6 +10,7 @@
 #import "XHDDOnlineFunPlayLatestCell.h"
 #import "XHDDOnlineFunPlayHeaderView.h"
 #import "XHDDOnlineCategorysCell.h"
+#import "XHDDOnlineRecommendCategorysCell.h"
 
 @interface XHDDOnlineFunPlayTableView()<UITableViewDataSource, UITableViewDelegate>
 
@@ -46,7 +47,7 @@
 
 - (void)willMoveToSuperview:(UIView *)newSuperview{
 
-    self.frame = CGRectMake(newSuperview.frame.size.width, 0,newSuperview.frame.size.width, newSuperview.frame.size.height);
+    self.frame = CGRectMake(0, 0,newSuperview.frame.size.width, newSuperview.frame.size.height);
 }
 #pragma mark - tableView Delegate
 /** 返回组数    */
@@ -76,9 +77,14 @@
     }
     else if(indexPath.section == 1){//第一组
     
-        UITableViewCell *cell = [[UITableViewCell alloc] init];
+        XHDDOnlineRecommendCategorysCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineRecommendCategorysCell"];
         
-        cell.textLabel.text = @"test";
+        if (cell == nil) {
+            
+            cell = [[XHDDOnlineRecommendCategorysCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"XHDDOnlineRecommendCategorysCell"];
+        }
+       
+        cell.recommendCategory = self.funPlayModel.result.recommendCategory;
         
         return cell;
 
@@ -99,10 +105,8 @@
 /** 返回重复利用的组头*/
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
 
-    
     XHDDOnlineFunPlayHeaderView *headerView = [XHDDOnlineFunPlayHeaderView headerViewWithTableView:tableView];
   
-
     if (section == 0) {
         
         headerView.headerImageView.image = [UIImage imageNamed:@"home_region_icon_33"];
@@ -121,8 +125,6 @@
         CategoriesModel *category =self.funPlayModel.result.categories[section - 2];
         headerView.nameLabel.text = category.category.tag_name;
     }
-
- 
     return headerView;
 }
 #warning 消耗性能
@@ -130,6 +132,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
 
     return 30;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+
+    return 0.01;
 }
 /** 返回行高*/
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

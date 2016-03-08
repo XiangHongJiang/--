@@ -18,11 +18,16 @@
 
 @implementation XHDDOnlineCategoryDetailCell
 
+
 - (void)setModel:(DeepList *)model{
     
     _model = model;
     
+
+    
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.cover]];
+    self.imageView.layer.cornerRadius = 4;
+    self.imageView.layer.masksToBounds = YES;
     self.titleLabel.text = model.title;
     self.total_countLabel.text = [NSString stringWithFormat:@"%@话全",model.total_count];
 }

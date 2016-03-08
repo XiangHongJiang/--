@@ -14,9 +14,6 @@
 
 @property (nonatomic, weak) UICollectionView * collectionView;
 
-@property (nonatomic, copy) NSArray *pictureArray;
-
-
 @end
 
 @implementation XHDDOnlineRecommendCategorysCell
@@ -28,10 +25,8 @@
         //1.创建collectionView
         [self creatCollectionView];
         
-        
         //2.注册cell
         [self registCollectionView];
-
         
     }
     return  self;
@@ -44,20 +39,11 @@
 //创建collectionView
 - (void)creatCollectionView{
     
-    //    //1.创建布局对象
-    //    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    //
-    //    //2.设置布局
-    //    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    //    flowLayout.minimumInteritemSpacing = 5;
-    //    flowLayout.minimumLineSpacing = 5;
-    
-    //自定义布局
+    //1.自定义布局
     XHDDOnlineMy3DLayout *layout = [[XHDDOnlineMy3DLayout alloc] init];
     
-    //3.创建带布局的collectionView
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, JScreenHeight * 0.5, JScreenWidth, JScreenHeight * 0.5) collectionViewLayout:layout];
-    
+    //2.创建带布局的collectionView
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, JScreenWidth - JPedding, 200) collectionViewLayout:layout];
     
     [self.contentView addSubview:collectionView];
     self.collectionView = collectionView;
@@ -65,16 +51,23 @@
     
     collectionView.contentOffset = CGPointMake(JSelfW, 0);
     
-    //4.设置代理
+    //3.设置代理
     collectionView.dataSource = self;
     collectionView.delegate = self;
     
 }
 
+- (void)setRecommendCategory:(NSArray *)recommendCategory{
+
+    _recommendCategory = recommendCategory;
+    
+    [self.collectionView reloadData];
+}
+
 #pragma mark - 代理相关
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return self.pictureArray.count;
+    return self.recommendCategory.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -82,6 +75,8 @@
     XHDDOnlineRecommendCategoryDetailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XHDDOnlineRecommendCategoryDetailCell" forIndexPath:indexPath];
     
     cell.categoryDetailModel = self.recommendCategory[indexPath.row];
+    
+    
     
     return cell;
     

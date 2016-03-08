@@ -32,7 +32,7 @@
 /** 即将添加到父视图确定位置及尺寸 */
 - (void)willMoveToSuperview:(UIView *)newSuperview{
 
-    self.frame = CGRectMake(0, 0, newSuperview.frame.size.width, newSuperview.frame.size.height);
+    self.frame = CGRectMake(newSuperview.frame.size.width, 0, newSuperview.frame.size.width, newSuperview.frame.size.height);
 }
 #pragma mark - setter
 /** setter  */
