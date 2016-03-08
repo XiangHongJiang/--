@@ -30,7 +30,6 @@
 
     _latestModel = latestModel;
 
-    
 #warning 赋值数据
     JLog(@"%p",latestModel);
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:latestModel.cover]];

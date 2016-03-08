@@ -29,13 +29,6 @@
     
     return self;
 }
-#pragma mark - 根据model刷新数据
-- (void)setLatestModel:(LatestupdateModel *)latestModel{
-
-    _latestModel = latestModel;
-    [self.collctionView reloadData];
-
-}
 #pragma mark - setupUI
 - (void)addCollectionView{
     //创建布局
@@ -51,6 +44,8 @@
     
     collectionView.backgroundColor = JColorLightGray;
     self.collctionView = collectionView;
+    collectionView.bounces = NO;
+    collectionView.showsVerticalScrollIndicator = NO;
     
     //设置代理
     collectionView.delegate = self;
@@ -60,6 +55,13 @@
     [collectionView registerNib:[UINib nibWithNibName:@"XHDDOnlineLatestUpdateCell" bundle:nil] forCellWithReuseIdentifier:@"XHDDOnlineLatestUpdateCell"];
     
     [collectionView registerClass:NSClassFromString(@"UICollectionViewCell") forCellWithReuseIdentifier:@"CollectionViewCell"];
+}
+#pragma mark - 根据model刷新数据
+- (void)setLatestModel:(LatestupdateModel *)latestModel{
+
+    _latestModel = latestModel;
+    [self.collctionView reloadData];
+
 }
 #pragma mark - dalegate and datasource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

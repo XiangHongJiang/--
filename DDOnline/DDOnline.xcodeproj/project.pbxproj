@@ -113,7 +113,6 @@
 		BC014A981C8B2FEF00AA4C45 /* Navi_scan_n@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC014A951C8B2FEF00AA4C45 /* Navi_scan_n@2x.png */; };
 		BC014A991C8B2FEF00AA4C45 /* Navi_scan_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC014A961C8B2FEF00AA4C45 /* Navi_scan_n@3x.png */; };
 		BC0BACE81C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0BACE61C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.m */; };
-		BC0BACE91C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0BACE71C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.xib */; };
 		BC0F64581C8DC62C005F599C /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0F643C1C8DC62C005F599C /* NSData+ImageContentType.m */; };
 		BC0F64591C8DC62C005F599C /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0F643E1C8DC62C005F599C /* SDImageCache.m */; };
 		BC0F645A1C8DC62C005F599C /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0F64401C8DC62C005F599C /* SDWebImageCompat.m */; };
@@ -291,6 +290,8 @@
 		BC35F5831C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */; };
 		BC35F58A1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */; };
 		BC35F58B1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */; };
+		BC3965941C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3965921C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m */; };
+		BC3965951C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3965931C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib */; };
 		BC8D615C1C8D794A0043F18F /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */; };
 		BC8D615D1C8D794A0043F18F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61491C8D794A0043F18F /* MJExtensionConst.m */; };
 		BC8D615E1C8D794A0043F18F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D614B1C8D794A0043F18F /* MJFoundation.m */; };
@@ -508,7 +509,6 @@
 		BC014A961C8B2FEF00AA4C45 /* Navi_scan_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Navi_scan_n@3x.png"; sourceTree = "<group>"; };
 		BC0BACE51C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineCategorysCell.h; sourceTree = "<group>"; };
 		BC0BACE61C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineCategorysCell.m; sourceTree = "<group>"; };
-		BC0BACE71C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineCategorysCell.xib; sourceTree = "<group>"; };
 		BC0F643B1C8DC62C005F599C /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		BC0F643C1C8DC62C005F599C /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		BC0F643D1C8DC62C005F599C /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
@@ -707,6 +707,9 @@
 		BC35F5871C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLatestUpdateCell.h; sourceTree = "<group>"; };
 		BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineLatestUpdateCell.m; sourceTree = "<group>"; };
 		BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineLatestUpdateCell.xib; sourceTree = "<group>"; };
+		BC3965911C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineCategoryDetailCell.h; sourceTree = "<group>"; };
+		BC3965921C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineCategoryDetailCell.m; sourceTree = "<group>"; };
+		BC3965931C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineCategoryDetailCell.xib; sourceTree = "<group>"; };
 		BC8D61451C8D794A0043F18F /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		BC8D61471C8D794A0043F18F /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -1634,18 +1637,44 @@
 		BC1AB0D61C8D17D50007EDF4 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BC0FFB601C8DD6A80035B840 /* XHDDOnlineFunPlayHeaderView.h */,
+				BC0FFB611C8DD6A80035B840 /* XHDDOnlineFunPlayHeaderView.m */,
+				BC39658D1C8E66DF00BC23EF /* 分类推荐 */,
+				BC39658B1C8E668B00BC23EF /* 分类 */,
+				BC39658A1C8E665F00BC23EF /* 最新更新 */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		BC39658A1C8E665F00BC23EF /* 最新更新 */ = {
+			isa = PBXGroup;
+			children = (
 				BC35F5811C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.h */,
 				BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */,
 				BC35F5871C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.h */,
 				BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */,
 				BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */,
+			);
+			name = "最新更新";
+			sourceTree = "<group>";
+		};
+		BC39658B1C8E668B00BC23EF /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
 				BC0BACE51C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.h */,
 				BC0BACE61C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.m */,
-				BC0BACE71C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.xib */,
-				BC0FFB601C8DD6A80035B840 /* XHDDOnlineFunPlayHeaderView.h */,
-				BC0FFB611C8DD6A80035B840 /* XHDDOnlineFunPlayHeaderView.m */,
+				BC3965911C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.h */,
+				BC3965921C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m */,
+				BC3965931C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib */,
 			);
-			name = Cell;
+			name = "分类";
+			sourceTree = "<group>";
+		};
+		BC39658D1C8E66DF00BC23EF /* 分类推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "分类推荐";
 			sourceTree = "<group>";
 		};
 		BC8D61441C8D794A0043F18F /* MJExtension */ = {
@@ -1846,7 +1875,6 @@
 				BC1AB0591C8C0BE40007EDF4 /* 043@2x.png in Resources */,
 				BC1AB09D1C8C0BE40007EDF4 /* goberserk@2x.png in Resources */,
 				BC0149871C8B014A00AA4C45 /* LICENSE in Resources */,
-				BC0BACE91C8DB3D200CDA5F8 /* XHDDOnlineCategorysCell.xib in Resources */,
 				BC1AB0811C8C0BE40007EDF4 /* 083@2x.png in Resources */,
 				BC1AB05B1C8C0BE40007EDF4 /* 045@2x.png in Resources */,
 				BC014A8E1C8B242400AA4C45 /* TabBar_Client_4_n.png in Resources */,
@@ -1909,6 +1937,7 @@
 				BC0148601C8B011C00AA4C45 /* LICENSE in Resources */,
 				BC014A911C8B242400AA4C45 /* TabBar_Client_4_p.png in Resources */,
 				BC1AAFAC1C8C0BC40007EDF4 /* sidemenu_setting@3x.png in Resources */,
+				BC3965951C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib in Resources */,
 				BC1AB0301C8C0BE40007EDF4 /* 002@2x.png in Resources */,
 				BC0FFB581C8DD6620035B840 /* home_region_icon_32@3x.png in Resources */,
 				BC0FFB5E1C8DD6620035B840 /* home_region_icon_34@2x.png in Resources */,
@@ -2034,6 +2063,7 @@
 				BC0F645F1C8DC62C005F599C /* SDWebImagePrefetcher.m in Sources */,
 				BC0149991C8B014A00AA4C45 /* UIScrollView+MJRefresh.m in Sources */,
 				BC014A011C8B022F00AA4C45 /* XHDDOnlineRootTabBarController.m in Sources */,
+				BC3965941C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m in Sources */,
 				BC0F64591C8DC62C005F599C /* SDImageCache.m in Sources */,
 				BC01481F1C8AFED600AA4C45 /* XHNetHelp.m in Sources */,
 				BC0148621C8B011C00AA4C45 /* AFAutoPurgingImageCache.m in Sources */,

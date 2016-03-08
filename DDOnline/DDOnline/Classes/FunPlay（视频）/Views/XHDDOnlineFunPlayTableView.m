@@ -67,8 +67,16 @@
  
         return cell;
     }
+    else if(indexPath.section == 1){//第一组
     
-    else{
+        UITableViewCell *cell = [[UITableViewCell alloc] init];
+        
+        cell.textLabel.text = @"test";
+        
+        return cell;
+
+    }
+    else{//其他组
 //        cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineCategorysCell"];
         
      UITableViewCell *cell = [[UITableViewCell alloc] init];
@@ -109,12 +117,13 @@
  
     return headerView;
 }
-
+#warning 消耗性能
+/** 返回组头高度*/
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
 
     return 30;
 }
-
+/** 返回行高*/
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     if (indexPath.section == 0) {
