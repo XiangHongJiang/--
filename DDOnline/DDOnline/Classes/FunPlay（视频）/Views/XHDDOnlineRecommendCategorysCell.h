@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHDDOnlineFunPlayModel.h"
 
 @interface XHDDOnlineRecommendCategorysCell : UITableViewCell
-
+/**
+ *  recommendCategorysModel
+ */
+@property (nonatomic, strong) NSArray *recommendCategory;
 @end

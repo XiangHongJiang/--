@@ -9,14 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface XHDDOnlineFunPlayHeaderView : UITableViewHeaderFooterView
-
-/**
- *  nameLabel
- */
+/** *  nameLabel */
 @property (nonatomic, weak) UILabel * nameLabel;
-/**
- *  headerImageView
- */
+/** *  headerImageView */
 @property (nonatomic, weak) UIImageView *headerImageView;
 
 + (instancetype)headerViewWithTableView:(UITableView *)tableView;

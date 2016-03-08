@@ -293,6 +293,9 @@
 		BC35F58B1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */; };
 		BC3965941C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3965921C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m */; };
 		BC3965951C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3965931C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib */; };
+		BC39659D1C8E928400BC23EF /* XHDDOnlineMy3DLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BC39659C1C8E928400BC23EF /* XHDDOnlineMy3DLayout.m */; };
+		BC3965A11C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC39659F1C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.m */; };
+		BC3965A21C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3965A01C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.xib */; };
 		BC8D615C1C8D794A0043F18F /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */; };
 		BC8D615D1C8D794A0043F18F /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D61491C8D794A0043F18F /* MJExtensionConst.m */; };
 		BC8D615E1C8D794A0043F18F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8D614B1C8D794A0043F18F /* MJFoundation.m */; };
@@ -713,6 +716,11 @@
 		BC3965911C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineCategoryDetailCell.h; sourceTree = "<group>"; };
 		BC3965921C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineCategoryDetailCell.m; sourceTree = "<group>"; };
 		BC3965931C8E687700BC23EF /* XHDDOnlineCategoryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineCategoryDetailCell.xib; sourceTree = "<group>"; };
+		BC39659B1C8E928400BC23EF /* XHDDOnlineMy3DLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineMy3DLayout.h; sourceTree = "<group>"; };
+		BC39659C1C8E928400BC23EF /* XHDDOnlineMy3DLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineMy3DLayout.m; sourceTree = "<group>"; };
+		BC39659E1C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineRecommendCategoryDetailCell.h; sourceTree = "<group>"; };
+		BC39659F1C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineRecommendCategoryDetailCell.m; sourceTree = "<group>"; };
+		BC3965A01C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDDOnlineRecommendCategoryDetailCell.xib; sourceTree = "<group>"; };
 		BC8D61451C8D794A0043F18F /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
 		BC8D61461C8D794A0043F18F /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
 		BC8D61471C8D794A0043F18F /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -1096,6 +1104,8 @@
 			children = (
 				BC1AB0A81C8C0C110007EDF4 /* emoji.plist */,
 				BC1AB0AA1C8C0C190007EDF4 /* emojiToText.plist */,
+				BC39659B1C8E928400BC23EF /* XHDDOnlineMy3DLayout.h */,
+				BC39659C1C8E928400BC23EF /* XHDDOnlineMy3DLayout.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1678,6 +1688,9 @@
 			children = (
 				BC2DCD881C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.h */,
 				BC2DCD891C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m */,
+				BC39659E1C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.h */,
+				BC39659F1C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.m */,
+				BC3965A01C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.xib */,
 			);
 			name = "分类推荐";
 			sourceTree = "<group>";
@@ -1987,6 +2000,7 @@
 				BC1AB0941C8C0BE40007EDF4 /* 102@2x.png in Resources */,
 				BC1AB04B1C8C0BE40007EDF4 /* 029@2x.png in Resources */,
 				BC1AB0321C8C0BE40007EDF4 /* 004@2x.png in Resources */,
+				BC3965A21C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.xib in Resources */,
 				BC1AB0711C8C0BE40007EDF4 /* 067@2x.png in Resources */,
 				BC1AB0751C8C0BE40007EDF4 /* 071@2x.png in Resources */,
 				BC1AB0511C8C0BE40007EDF4 /* 035@2x.png in Resources */,
@@ -2093,12 +2107,14 @@
 				BC0148651C8B011C00AA4C45 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				BC0149971C8B014A00AA4C45 /* MJRefreshConst.m in Sources */,
 				BC01481E1C8AFED600AA4C45 /* UIViewController+SpliteView.m in Sources */,
+				BC39659D1C8E928400BC23EF /* XHDDOnlineMy3DLayout.m in Sources */,
 				BC0149FB1C8B020300AA4C45 /* XHDDOnlineMainController.m in Sources */,
 				BC0F64651C8DC62C005F599C /* UIView+WebCacheOperation.m in Sources */,
 				BC0148301C8B010800AA4C45 /* README.md in Sources */,
 				BC8D61631C8D794A0043F18F /* NSObject+MJCoding.m in Sources */,
 				BC0F64631C8DC62C005F599C /* UIImageView+HighlightedWebCache.m in Sources */,
 				BC8D61611C8D794A0043F18F /* MJPropertyType.m in Sources */,
+				BC3965A11C8E92FD00BC23EF /* XHDDOnlineRecommendCategoryDetailCell.m in Sources */,
 				BC0F645E1C8DC62C005F599C /* SDWebImageManager.m in Sources */,
 				BC0F645A1C8DC62C005F599C /* SDWebImageCompat.m in Sources */,
 				BC8D61601C8D794A0043F18F /* MJPropertyKey.m in Sources */,
