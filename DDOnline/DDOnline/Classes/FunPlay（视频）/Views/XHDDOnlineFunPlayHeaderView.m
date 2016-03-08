@@ -69,15 +69,15 @@
     label.layer.cornerRadius = 4;
     label.layer.masksToBounds = YES;
     
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont systemFontOfSize:13];
-    label.text = @"进去看看";
-    [self.contentView addSubview:label];
-    [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(-10);
-        make.top.equalTo(2);
-        make.width.equalTo(60);
-        make.height.equalTo(25);
-    }];
+//    label.textAlignment = NSTextAlignmentCenter;
+//    label.font = [UIFont systemFontOfSize:13];
+//    label.text = @"进去看看";
+//    [self.contentView addSubview:label];
+//    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.right.equalTo(-10);
+//        make.top.equalTo(2);
+//        make.width.equalTo(60);
+//        make.height.equalTo(25);
+//    }];
 }
 @end

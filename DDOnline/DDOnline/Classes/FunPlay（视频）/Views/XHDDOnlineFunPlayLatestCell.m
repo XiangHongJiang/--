@@ -47,6 +47,7 @@
     collectionView.bounces = NO;
     collectionView.showsVerticalScrollIndicator = NO;
     
+    
     //设置代理
     collectionView.delegate = self;
     collectionView.dataSource = self;

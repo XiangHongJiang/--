@@ -287,6 +287,7 @@
 		BC1AB0CD1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CC1C8D133A0007EDF4 /* XHDDOnlineFunPlayTableView.m */; };
 		BC1AB0D01C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */; };
 		BC1AB0E11C8D19E90007EDF4 /* XHDDOnlineLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */; };
+		BC2DCD8A1C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2DCD891C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m */; };
 		BC35F5831C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */; };
 		BC35F58A1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC35F5881C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.m */; };
 		BC35F58B1C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC35F5891C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.xib */; };
@@ -702,6 +703,8 @@
 		BC1AB0CF1C8D13DA0007EDF4 /* XHDDOnlineLiveTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XHDDOnlineLiveTableView.m; path = "FunPlay（视频）/Views/XHDDOnlineLiveTableView.m"; sourceTree = "<group>"; };
 		BC1AB0DF1C8D19E90007EDF4 /* XHDDOnlineLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XHDDOnlineLiveModel.h; path = "FunPlay（视频）/Models/XHDDOnlineLiveModel.h"; sourceTree = "<group>"; };
 		BC1AB0E01C8D19E90007EDF4 /* XHDDOnlineLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XHDDOnlineLiveModel.m; path = "FunPlay（视频）/Models/XHDDOnlineLiveModel.m"; sourceTree = "<group>"; };
+		BC2DCD881C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineRecommendCategorysCell.h; sourceTree = "<group>"; };
+		BC2DCD891C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineRecommendCategorysCell.m; sourceTree = "<group>"; };
 		BC35F5811C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineFunPlayLatestCell.h; sourceTree = "<group>"; };
 		BC35F5821C8D9F5E0000FE64 /* XHDDOnlineFunPlayLatestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDDOnlineFunPlayLatestCell.m; sourceTree = "<group>"; };
 		BC35F5871C8DA29F0000FE64 /* XHDDOnlineLatestUpdateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDDOnlineLatestUpdateCell.h; sourceTree = "<group>"; };
@@ -1673,6 +1676,8 @@
 		BC39658D1C8E66DF00BC23EF /* 分类推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				BC2DCD881C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.h */,
+				BC2DCD891C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m */,
 			);
 			name = "分类推荐";
 			sourceTree = "<group>";
@@ -2056,6 +2061,7 @@
 				BC0149951C8B014A00AA4C45 /* MJRefreshStateHeader.m in Sources */,
 				BC0F645B1C8DC62C005F599C /* SDWebImageDecoder.m in Sources */,
 				BC01488E1C8B013300AA4C45 /* MASViewConstraint.m in Sources */,
+				BC2DCD8A1C8E7149006A6DD0 /* XHDDOnlineRecommendCategorysCell.m in Sources */,
 				BC01486A1C8B011C00AA4C45 /* UIWebView+AFNetworking.m in Sources */,
 				BC0149901C8B014A00AA4C45 /* MJRefreshBackGifFooter.m in Sources */,
 				BC014A0A1C8B05D800AA4C45 /* XHDDOnlineFunPlayController.m in Sources */,

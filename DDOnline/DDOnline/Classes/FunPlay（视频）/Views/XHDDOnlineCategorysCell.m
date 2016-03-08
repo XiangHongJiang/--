@@ -39,8 +39,11 @@
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, JScreenWidth - JMargin,200) collectionViewLayout:flowLayout];
     
     [self.contentView addSubview:collectionView];
-    
-    
+
+
+    collectionView.showsHorizontalScrollIndicator = NO;
+    collectionView.showsVerticalScrollIndicator = NO;
+    collectionView.backgroundColor = JColorLightGray;
     self.collctionView = collectionView;
     collectionView.bounces = NO;
     collectionView.showsVerticalScrollIndicator = NO;
@@ -56,6 +59,8 @@
 - (void)setCategoryModel:(CategoriesModel *)categoryModel{
 
     _categoryModel = categoryModel;
+    
+    self.collctionView.contentOffset = CGPointZero;
     [self.collctionView reloadData];
 }
 #pragma mark - delegate
@@ -67,15 +72,13 @@
     
     XHDDOnlineCategoryDetailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XHDDOnlineCategoryDetailCell" forIndexPath:indexPath];
     
-    cell.backgroundColor = [UIColor greenColor];
-    
     cell.model = self.categoryModel.list.list[indexPath.row];
     
     return cell;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake(120, 200);
+    return CGSizeMake(100, 200);
 }
 
 @end

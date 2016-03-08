@@ -25,8 +25,13 @@
     funPlayTableView.delegate = funPlayTableView;
     funPlayTableView.dataSource = funPlayTableView;
     
+    funPlayTableView.showsVerticalScrollIndicator = NO;
+    funPlayTableView.showsHorizontalScrollIndicator = NO;
+    
+    funPlayTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     //注册cell
-    [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategorysCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineCategorysCell"];
+//    [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategorysCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineCategorysCell"];
     
     
     return funPlayTableView;
