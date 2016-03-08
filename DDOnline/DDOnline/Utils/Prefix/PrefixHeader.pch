@@ -41,5 +41,7 @@
 //MJRefresh
 #import "MJRefresh.h"
 
+//SDWebImage
+#import "UIImageView+WebCache.h"
 
 #endif /* PrefixHeader_pch */

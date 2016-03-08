@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHDDOnlineFunPlayModel.h"
 
 @interface XHDDOnlineCategoryDetailCell : UICollectionViewCell
 /**
  *  model
  */
-@property (nonatomic, strong) id model;
+@property (nonatomic, strong) DeepList *model;
 @end

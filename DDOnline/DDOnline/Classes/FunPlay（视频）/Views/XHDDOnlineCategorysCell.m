@@ -52,16 +52,24 @@
     //注册item
     [collectionView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategoryDetailCell" bundle:nil] forCellWithReuseIdentifier:@"XHDDOnlineCategoryDetailCell"];
 }
+#pragma mark - setter
+- (void)setCategoryModel:(CategoriesModel *)categoryModel{
+
+    _categoryModel = categoryModel;
+    [self.collctionView reloadData];
+}
 #pragma mark - delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 6;
+    return self.categoryModel.list.list.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     XHDDOnlineCategoryDetailCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"XHDDOnlineCategoryDetailCell" forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor greenColor];
+    
+    cell.model = self.categoryModel.list.list[indexPath.row];
     
     return cell;
 }

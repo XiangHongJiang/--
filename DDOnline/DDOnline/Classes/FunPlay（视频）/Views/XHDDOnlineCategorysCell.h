@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XHDDOnlineFunPlayModel.h"
 
 @interface XHDDOnlineCategorysCell : UITableViewCell
-
+/** *  cotegoryModel */
+@property (nonatomic, strong) CategoriesModel *categoryModel;
 @end

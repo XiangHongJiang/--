@@ -9,6 +9,7 @@
 #import "XHDDOnlineFunPlayTableView.h"
 #import "XHDDOnlineFunPlayLatestCell.h"
 #import "XHDDOnlineFunPlayHeaderView.h"
+#import "XHDDOnlineCategorysCell.h"
 
 @interface XHDDOnlineFunPlayTableView()<UITableViewDataSource, UITableViewDelegate>
 
@@ -26,6 +27,7 @@
     
     //注册cell
     [funPlayTableView registerNib:[UINib nibWithNibName:@"XHDDOnlineCategorysCell" bundle:nil] forCellReuseIdentifier:@"XHDDOnlineCategorysCell"];
+    
     
     return funPlayTableView;
 }
@@ -77,11 +79,12 @@
 
     }
     else{//其他组
-//        cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineCategorysCell"];
-        
-     UITableViewCell *cell = [[UITableViewCell alloc] init];
-        
-     cell.textLabel.text = @"test";
+          XHDDOnlineCategorysCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XHDDOnlineCategorysCell"];
+        if (cell == nil) {
+            
+            cell = [[XHDDOnlineCategorysCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"XHDDOnlineCategorysCell"];
+        }
+        cell.categoryModel = self.funPlayModel.result.categories[indexPath.section - 2];
         
         return cell;
     }
